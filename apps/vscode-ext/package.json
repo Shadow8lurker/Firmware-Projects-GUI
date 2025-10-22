@@ -1,0 +1,34 @@
+{
+  "name": "commwatch",
+  "displayName": "Comm Watch",
+  "description": "Cross-Platform Communication Watch Window",
+  "version": "0.1.0",
+  "publisher": "commwatch",
+  "engines": {
+    "vscode": "^1.84.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": ["onCommand:commwatch.open"],
+  "main": "dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "commwatch.open",
+        "title": "CommWatch: Open"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "package": "vsce package"
+  },
+  "dependencies": {
+    "@commwatch/proto-core": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "20.12.7",
+    "@types/vscode": "1.84.0",
+    "typescript": "5.4.5",
+    "vsce": "2.16.1"
+  }
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "meta": {
+      "timestamp": 0,
+      "direction": "tx",
+      "protocol": "uart"
+    },
+    "data": "aa0103102030f7c0bb00"
+  }
+]

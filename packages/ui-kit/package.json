@@ -1,0 +1,26 @@
+{
+  "name": "@commwatch/ui-kit",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -b",
+    "test": "vitest run",
+    "lint": "eslint src --ext .ts,.tsx"
+  },
+  "dependencies": {
+    "@commwatch/proto-core": "workspace:*",
+    "@commwatch/decoders": "workspace:*",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "zustand": "4.5.2"
+  },
+  "devDependencies": {
+    "typescript": "5.4.5",
+    "vitest": "1.5.0",
+    "@types/node": "20.12.7",
+    "@types/react": "18.2.79",
+    "@types/react-dom": "18.2.25"
+  }
+}

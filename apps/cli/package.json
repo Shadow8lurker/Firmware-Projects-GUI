@@ -1,0 +1,28 @@
+{
+  "name": "@commwatch/cli",
+  "version": "0.1.0",
+  "bin": {
+    "commwatch": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "test": "vitest run",
+    "lint": "eslint src --ext .ts"
+  },
+  "dependencies": {
+    "@commwatch/proto-core": "workspace:*",
+    "@commwatch/transports-uart": "workspace:*",
+    "@commwatch/transports-spi": "workspace:*",
+    "@commwatch/transports-i2c": "workspace:*",
+    "@commwatch/transports-can": "workspace:*",
+    "@commwatch/transports-eth": "workspace:*",
+    "yargs": "17.7.2",
+    "yargs/helpers": "^1.0.2"
+  },
+  "devDependencies": {
+    "typescript": "5.4.5",
+    "vitest": "1.5.0",
+    "@types/node": "20.12.7",
+    "@types/yargs": "17.0.32"
+  }
+}

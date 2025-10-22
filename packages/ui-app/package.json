@@ -1,0 +1,30 @@
+{
+  "name": "@commwatch/ui-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@commwatch/ui-kit": "workspace:*",
+    "@commwatch/proto-core": "workspace:*",
+    "@commwatch/decoders": "workspace:*",
+    "@commwatch/transports-uart": "workspace:*",
+    "@commwatch/transports-spi": "workspace:*",
+    "@commwatch/transports-i2c": "workspace:*",
+    "@commwatch/transports-can": "workspace:*",
+    "@commwatch/transports-eth": "workspace:*",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.12.7",
+    "@types/react": "18.2.79",
+    "@types/react-dom": "18.2.25",
+    "typescript": "5.4.5",
+    "vite": "5.2.11",
+    "@vitejs/plugin-react": "4.3.0"
+  }
+}

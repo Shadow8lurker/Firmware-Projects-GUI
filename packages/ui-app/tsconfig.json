@@ -1,0 +1,18 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "baseUrl": "."
+  },
+  "include": ["src"],
+  "references": [
+    { "path": "../ui-kit" },
+    { "path": "../proto-core" },
+    { "path": "../decoders" },
+    { "path": "../transports-uart" },
+    { "path": "../transports-spi" },
+    { "path": "../transports-i2c" },
+    { "path": "../transports-can" },
+    { "path": "../transports-eth" }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "protocol": "uart",
+  "deviceId": "sim-uart-1",
+  "options": {
+    "baudRate": 115200,
+    "parity": "none",
+    "dataBits": 8,
+    "stopBits": 1,
+    "flowControl": "none"
+  },
+  "decoder": "efuse",
+  "presets": [
+    {
+      "name": "EFuse Status",
+      "payloadHex": "AA 01 03 10 20 30"
+    }
+  ]
+}

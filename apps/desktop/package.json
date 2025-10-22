@@ -1,0 +1,21 @@
+{
+  "name": "@commwatch/desktop",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc -b",
+    "dev": "electron-esbuild",
+    "start": "electron dist/main.js",
+    "package": "electron-builder"
+  },
+  "dependencies": {
+    "electron": "29.3.0"
+  },
+  "devDependencies": {
+    "typescript": "5.4.5",
+    "@types/node": "20.12.7",
+    "electron-builder": "24.9.1",
+    "electron-esbuild": "3.3.0"
+  }
+}

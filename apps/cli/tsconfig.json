@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist"
+  },
+  "include": ["src"],
+  "references": [
+    { "path": "../../packages/proto-core" },
+    { "path": "../../packages/transports-uart" },
+    { "path": "../../packages/transports-spi" },
+    { "path": "../../packages/transports-i2c" },
+    { "path": "../../packages/transports-can" },
+    { "path": "../../packages/transports-eth" }
+  ]
+}

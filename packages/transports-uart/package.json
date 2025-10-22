@@ -1,0 +1,20 @@
+{
+  "name": "@commwatch/transports-uart",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -b",
+    "test": "vitest run",
+    "lint": "eslint src --ext .ts"
+  },
+  "dependencies": {
+    "@commwatch/proto-core": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "5.4.5",
+    "vitest": "1.5.0",
+    "@types/node": "20.12.7"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "commwatch-vscode",
+  "displayName": "CommWatch",
+  "version": "0.1.0",
+  "publisher": "commwatch",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:commwatch.open"
+  ],
+  "main": "dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "commwatch.open",
+        "title": "CommWatch: Open"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "tsc -p tsconfig.json --noEmit",
+    "package": "echo 'Package with vsce'"
+  },
+  "dependencies": {
+    "@commwatch/ui-kit": "workspace:*"
+  }
+}

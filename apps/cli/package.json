@@ -1,0 +1,22 @@
+{
+  "name": "@commwatch/cli",
+  "version": "0.1.0",
+  "description": "Headless CLI for CommWatch",
+  "bin": {
+    "commwatch": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "tsc -p tsconfig.json --noEmit",
+    "test": "node --test src/index.test.ts"
+  },
+  "dependencies": {
+    "@commwatch/proto-core": "workspace:*",
+    "@commwatch/transports-uart": "workspace:*",
+    "@commwatch/transports-can": "workspace:*",
+    "@commwatch/transports-spi": "workspace:*",
+    "@commwatch/transports-i2c": "workspace:*",
+    "@commwatch/transports-eth": "workspace:*",
+    "@commwatch/decoders": "workspace:*"
+  }
+}

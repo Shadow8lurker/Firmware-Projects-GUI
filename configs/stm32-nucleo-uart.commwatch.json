@@ -1,0 +1,25 @@
+{
+  "$schema": "https://commwatch.dev/schema/v1",
+  "name": "STM32 Nucleo UART",
+  "transport": {
+    "id": "uart",
+    "options": {
+      "port": "/dev/ttyACM0",
+      "baud": 115200,
+      "parity": "none",
+      "stopBits": 1,
+      "dataBits": 8
+    }
+  },
+  "decoder": "efuse",
+  "presets": [
+    {
+      "name": "Ping",
+      "payload": "aa 01 01 00 bb"
+    }
+  ],
+  "logging": {
+    "format": "json",
+    "path": "logs/stm32-session.json"
+  }
+}

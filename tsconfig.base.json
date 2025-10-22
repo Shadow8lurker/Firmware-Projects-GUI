@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "lib": ["ES2020", "DOM"],
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "typeRoots": ["./types"],
+    "paths": {
+      "@commwatch/proto-core": ["packages/proto-core/dist/index"],
+      "@commwatch/transports-uart": ["packages/transports-uart/dist/index"],
+      "@commwatch/transports-spi": ["packages/transports-spi/dist/index"],
+      "@commwatch/transports-i2c": ["packages/transports-i2c/dist/index"],
+      "@commwatch/transports-can": ["packages/transports-can/dist/index"],
+      "@commwatch/transports-eth": ["packages/transports-eth/dist/index"],
+      "@commwatch/decoders": ["packages/decoders/dist/index"],
+      "@commwatch/ui-kit": ["packages/ui-kit/dist/index"],
+      "@commwatch/simulators": ["tools/simulators/dist/index"]
+    }
+  },
+  "include": ["packages", "apps", "tools"],
+  "exclude": ["node_modules", "dist", "**/*.test.ts"]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "commwatch-desktop",
+  "version": "0.1.0",
+  "description": "Desktop preview shell for CommWatch",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "tsc -p tsconfig.json --noEmit",
+    "test": "node --test src/main.test.ts"
+  },
+  "dependencies": {
+    "@commwatch/ui-kit": "workspace:*",
+    "@commwatch/proto-core": "workspace:*",
+    "@commwatch/decoders": "workspace:*",
+    "@commwatch/transports-uart": "workspace:*"
+  }
+}

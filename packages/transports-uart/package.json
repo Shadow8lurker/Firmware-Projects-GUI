@@ -1,0 +1,18 @@
+{
+  "name": "@commwatch/transports-uart",
+  "version": "0.1.0",
+  "description": "CommWatch UART transport adapter",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "tsc -p tsconfig.json --noEmit",
+    "test": "node --test src/sim.test.ts"
+  },
+  "dependencies": {
+    "@commwatch/proto-core": "workspace:*"
+  }
+}

@@ -1,0 +1,10 @@
+node_modules
+pnpm-lock.yaml
+**/dist
+**/out
+.DS_Store
+.vscode
+*.vsix
+*.log
+coverage
+*.tsbuildinfo

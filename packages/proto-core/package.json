@@ -1,0 +1,13 @@
+{
+  "name": "@commwatch/proto-core",
+  "version": "0.1.0",
+  "description": "Core types, schemas, and utilities for CommWatch",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --test src/index.test.ts",
+    "lint": "tsc -p tsconfig.json --noEmit"
+  }
+}

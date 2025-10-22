@@ -1,0 +1,11 @@
+{
+  "name": "commwatch-monorepo",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Cross-platform Communication Watch Window",
+  "license": "MIT",
+  "scripts": {
+    "build": "node scripts/build-all.mjs",
+    "test": "node scripts/test-all.mjs"
+  }
+}
